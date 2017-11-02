@@ -17,7 +17,7 @@ void edge ()
 		if(SensorValue(sound) > 60)
 		{
 			motor[motorA] = 50;
-			if(getMotorEncoder(motorA) > 180)
+			while(getMotorEncoder(motorA) < 180)
 			{
 				// use while statment
 				motor[motorA] = 0;
